@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Email</title>
+    </head>
+    <body>
+        <div>
+            <h3> Welcome to Email Service </h3>           
+       
+            <span th:text="${subject}"></span>
+            <br/>
+            <span th:text="${content}"></span>
+            <br/>
+            <p>
+                With dozens of professionally designed email templates, we make it easy for you to send great looking emails that actually get delivered.
+            </p>
+           
+        </div>
+        <br/>
+        <h3>This email was sent to <span th:text="${mailTo}"></span> from <span th:text="${sender}"></span> </h3>
+    </body>
+</html>
